@@ -34,6 +34,7 @@ SOURCES += \
     src/Sources/set_server_dialog.cpp \
     src/Sources/window_init.cpp
 
+INCLUDEPATH += ./src/Headers
 HEADERS += \
     src/Headers/import_server_dialog.h \
     src/Headers/mainwindow.h \

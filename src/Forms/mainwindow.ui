@@ -799,7 +799,7 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
               <string notr="true">color:blue;</string>
              </property>
              <property name="text">
-              <string>版本：1.0(2022.09.11)</string>
+              <string>版本：0.2.5(2022.09.13)</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -820,7 +820,7 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
   <customwidget>
    <class>MyLabel</class>
    <extends>QLabel</extends>
-   <header>mylabel.h</header>
+   <header>src/Headers/mylabel.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

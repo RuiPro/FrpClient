@@ -258,12 +258,12 @@ MainWindow::MainWindow(QWidget *parent)
 
     //设置页面关于
     connect(ui->about,&MyLabel::clicked,[=](){
-        QMessageBox::information(this,"关于本软件","这是一个Frpc客户端。需要依赖frpc\n"
+        QMessageBox::information(this,"关于本软件","这是一个Frpc客户端。需要依赖frpc才能运行。\n"
                                               "本软件使用MIT协议开源。\n"
                                               "作者：RuiPro(GitHub)");
     });
     connect(ui->go_to_github,&MyLabel::clicked,[=](){
-        QDesktopServices::openUrl(QUrl(QString("https://www.baidu.com")));
+        QDesktopServices::openUrl(QUrl(QString("https://github.com/RuiPro/FrpClient")));
     });
 }
 
