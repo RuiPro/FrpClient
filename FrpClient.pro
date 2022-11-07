@@ -9,46 +9,55 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    src/Sources/file_init.cpp \
-    src/Sources/file_transcoding.cpp \
-    src/Sources/frpc_process.cpp \
-    src/Sources/has_this_server_in_config.cpp \
-    src/Sources/import_server_dialog.cpp \
-    src/Sources/main.cpp \
-    src/Sources/mainwindow.cpp \
-    src/Sources/mylabel.cpp \
-    src/Sources/portal.cpp \
-    src/Sources/portal_add.cpp \
-    src/Sources/portal_edit.cpp \
-    src/Sources/portal_remove.cpp \
-    src/Sources/read_configs.cpp \
-    src/Sources/read_server_configs.cpp \
-    src/Sources/read_server_list.cpp \
-    src/Sources/read_server_portals.cpp \
-    src/Sources/server.cpp \
-    src/Sources/server_add.cpp \
-    src/Sources/server_edit.cpp \
-    src/Sources/server_remove.cpp \
-    src/Sources/set_configs.cpp \
-    src/Sources/set_portal_dialog.cpp \
-    src/Sources/set_server_dialog.cpp \
-    src/Sources/window_init.cpp
+    src/MainWindow/file_init.cpp \
+    src/MainWindow/frpc_process.cpp \
+    src/MainWindow/has_this_server_in_config.cpp \
+    src/MyClass/dialog_import_server/import_server_dialog.cpp \
+    src/MainWindow/main.cpp \
+    src/MainWindow/mainwindow.cpp \
+    src/MyClass/mylabel/mylabel.cpp \
+    src/MyClass/mysettings/mysettings.cpp \
+    src/MyClass/portal/portal.cpp \
+    src/MainWindow/portal_add.cpp \
+    src/MainWindow/portal_edit.cpp \
+    src/MainWindow/portal_remove.cpp \
+    src/MainWindow/read_configs.cpp \
+    src/MainWindow/read_server_configs.cpp \
+    src/MainWindow/read_server_list.cpp \
+    src/MainWindow/read_server_portals.cpp \
+    src/MyClass/server/server.cpp \
+    src/MainWindow/server_add.cpp \
+    src/MainWindow/server_edit.cpp \
+    src/MainWindow/server_remove.cpp \
+    src/MainWindow/set_configs.cpp \
+    src/MyClass/dialog_set_portal/set_portal_dialog.cpp \
+    src/MyClass/dialog_set_server/set_server_dialog.cpp \
+    src/MainWindow/window_init.cpp
 
-INCLUDEPATH += ./src/Headers
+INCLUDEPATH += 	./src/MainWindow \
+				./src/MyClass/dialog_import_server \
+				./src/MyClass/mylabel \
+				./src/MyClass/mysettings \
+				./src/MyClass/portal \
+				./src/MyClass/server \
+				./src/MyClass/dialog_set_portal \
+				./src/MyClass/dialog_set_server
+				
 HEADERS += \
-    src/Headers/import_server_dialog.h \
-    src/Headers/mainwindow.h \
-    src/Headers/mylabel.h \
-    src/Headers/portal.h \
-    src/Headers/server.h \
-    src/Headers/set_portal_dialog.h \
-    src/Headers/set_server_dialog.h
+    src/MyClass/dialog_import_server/import_server_dialog.h \
+    src/MainWindow/mainwindow.h \
+    src/MyClass/mylabel/mylabel.h \
+    src/MyClass/mysettings/mysettings.h \
+    src/MyClass/portal/portal.h \
+    src/MyClass/server/server.h \
+    src/MyClass/dialog_set_portal/set_portal_dialog.h \
+    src/MyClass/dialog_set_server/set_server_dialog.h
 
 FORMS += \
-    src/Forms/import_server_dialog.ui \
-    src/Forms/mainwindow.ui \
-    src/Forms/set_portal_dialog.ui \
-    src/Forms/set_server_dialog.ui
+    src/MyClass/dialog_import_server/import_server_dialog.ui \
+    src/MainWindow/mainwindow.ui \
+    src/MyClass/dialog_set_portal/set_portal_dialog.ui \
+    src/MyClass/dialog_set_server/set_server_dialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
