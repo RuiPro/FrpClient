@@ -59,7 +59,7 @@ set_server_dialog::set_server_dialog(QWidget* parent,
         pos.setY(this->height()-mylabel->size().height());
         mylabel->move(pos);
         mylabel->setText("<u>已经有配置文件？导入>></u>");
-        connect(mylabel,MyLabel::clicked,[=](){
+        connect(mylabel,&MyLabel::clicked,[=](){
             QString newIni = QFileDialog::getOpenFileName(this,"选择服务器配置文件",QCoreApplication::applicationDirPath(),"*.ini");
             if(newIni.isEmpty()) return;
             QFile file(newIni);

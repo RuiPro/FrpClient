@@ -50,7 +50,7 @@ QTabBar::tab{width:150}</string>
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <property name="iconSize">
        <size>
@@ -84,7 +84,26 @@ QTabBar::tab{width:150}</string>
            <property name="spacing">
             <number>3</number>
            </property>
-           <item row="0" column="2">
+           <item row="0" column="5">
+            <widget class="QPushButton" name="frpc_switch">
+             <property name="minimumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>开启</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
             <widget class="QComboBox" name="frpc_choose_server">
              <property name="minimumSize">
               <size>
@@ -116,8 +135,8 @@ QTabBar::tab{width:150}</string>
              </property>
             </spacer>
            </item>
-           <item row="0" column="5">
-            <spacer name="horizontalSpacer_3">
+           <item row="0" column="4">
+            <spacer name="horizontalSpacer_2">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -148,33 +167,30 @@ QTabBar::tab{width:150}</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="4">
-            <widget class="QPushButton" name="frpc_switch">
-             <property name="minimumSize">
-              <size>
-               <width>120</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>120</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>开启</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="3">
-            <spacer name="horizontalSpacer_2">
+           <item row="0" column="6">
+            <spacer name="horizontalSpacer_3">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
              <property name="sizeHint" stdset="0">
               <size>
                <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>3</width>
                <height>20</height>
               </size>
              </property>
@@ -492,7 +508,20 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
            <property name="spacing">
             <number>3</number>
            </property>
-           <item row="0" column="5">
+           <item row="0" column="8">
+            <spacer name="horizontalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="6">
             <widget class="QPushButton" name="portal_remove_pushButton">
              <property name="minimumSize">
               <size>
@@ -511,21 +540,8 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
              </property>
             </widget>
            </item>
-           <item row="0" column="3">
-            <spacer name="horizontalSpacer_9">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="0" column="6">
-            <widget class="QPushButton" name="portal_edit_pushButton">
+           <item row="0" column="5">
+            <widget class="QPushButton" name="portal_add_pushButton">
              <property name="minimumSize">
               <size>
                <width>80</width>
@@ -539,9 +555,25 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
               </size>
              </property>
              <property name="text">
-              <string>修改隧道</string>
+              <string>添加隧道</string>
              </property>
             </widget>
+           </item>
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="label_3">
@@ -562,7 +594,20 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
              </property>
             </widget>
            </item>
-           <item row="0" column="8">
+           <item row="0" column="4">
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="9">
             <widget class="QPushButton" name="portal_refresh_pushButton">
              <property name="minimumSize">
               <size>
@@ -581,7 +626,20 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
              </property>
             </widget>
            </item>
-           <item row="0" column="2">
+           <item row="0" column="10">
+            <spacer name="horizontalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
             <widget class="QComboBox" name="portal_choose_server">
              <property name="minimumSize">
               <size>
@@ -597,37 +655,8 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
              </property>
             </widget>
            </item>
-           <item row="0" column="9">
-            <spacer name="horizontalSpacer_11">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>40</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="0" column="0">
-            <spacer name="horizontalSpacer_10">
-             <property name="orientation">
-              <enum>Qt::Horizontal</enum>
-             </property>
-             <property name="sizeType">
-              <enum>QSizePolicy::Fixed</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>20</height>
-              </size>
-             </property>
-            </spacer>
-           </item>
-           <item row="0" column="4">
-            <widget class="QPushButton" name="portal_add_pushButton">
+           <item row="0" column="7">
+            <widget class="QPushButton" name="portal_edit_pushButton">
              <property name="minimumSize">
               <size>
                <width>80</width>
@@ -641,18 +670,21 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
               </size>
              </property>
              <property name="text">
-              <string>添加隧道</string>
+              <string>修改隧道</string>
              </property>
             </widget>
            </item>
-           <item row="0" column="7">
-            <spacer name="horizontalSpacer_12">
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_14">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Minimum</enum>
+             </property>
              <property name="sizeHint" stdset="0">
               <size>
-               <width>40</width>
+               <width>3</width>
                <height>20</height>
               </size>
              </property>
@@ -799,7 +831,7 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
               <string notr="true">color:blue;</string>
              </property>
              <property name="text">
-              <string>版本：0.2.5(2022.09.13)</string>
+              <string>版本：0.2.6(2022.11.07)</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -820,7 +852,7 @@ QHeaderView::section{color:rgb(0, 85, 255); font-family: &quot;宋体&quot;; fon
   <customwidget>
    <class>MyLabel</class>
    <extends>QLabel</extends>
-   <header>src/Headers/mylabel.h</header>
+   <header>mylabel.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
